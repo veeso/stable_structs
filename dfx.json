@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "stable_structs_backend": {
+      "candid": "src/stable_structs_backend/stable_structs_backend.did",
+      "package": "stable_structs_backend",
+      "type": "rust"
+    },
+    "stable_structs_frontend": {
+      "dependencies": [
+        "stable_structs_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/stable_structs_frontend/src/index.html"
+      },
+      "source": [
+        "src/stable_structs_frontend/assets",
+        "dist/stable_structs_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

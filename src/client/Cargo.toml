@@ -1,0 +1,21 @@
+[package]
+name = "client"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "client"
+path = "src/main.rs"
+
+
+[dependencies]
+argh = "0.1.10"
+anyhow = "^1"
+candid = "0.8.2"
+did = { path = "../did" }
+ic-agent = "0.24.0"
+ic-cdk = "0.8.1"
+ic-cdk-macros = "0.6.0"
+tokio = { version = "^1", features = ["full"] }

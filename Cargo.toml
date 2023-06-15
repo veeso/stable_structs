@@ -1,4 +1,2 @@
 [workspace]
-members = [
-    "src/stable_structs_backend",
-]
+members = ["src/stable_structs", "src/dfinity_stables", "src/client", "src/did"]

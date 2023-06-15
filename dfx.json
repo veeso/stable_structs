@@ -1,22 +1,14 @@
 {
   "canisters": {
-    "stable_structs_backend": {
-      "candid": "src/stable_structs_backend/stable_structs_backend.did",
-      "package": "stable_structs_backend",
+    "stable_structs": {
+      "candid": "src/stable_structs/stable_structs.did",
+      "package": "stable_structs",
       "type": "rust"
     },
-    "stable_structs_frontend": {
-      "dependencies": [
-        "stable_structs_backend"
-      ],
-      "frontend": {
-        "entrypoint": "src/stable_structs_frontend/src/index.html"
-      },
-      "source": [
-        "src/stable_structs_frontend/assets",
-        "dist/stable_structs_frontend/"
-      ],
-      "type": "assets"
+    "dfinity_stables": {
+      "candid": "src/dfinity_stables/dfinity_stables.did",
+      "package": "dfinity_stables",
+      "type": "rust"
     }
   },
   "defaults": {

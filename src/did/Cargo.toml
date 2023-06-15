@@ -1,0 +1,13 @@
+[package]
+name = "did"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[dependencies]
+candid = "0.8.2"
+dfinity-stable-structures = { version = "0.5.4", package = "ic-stable-structures" }
+ic-stable-structures = { git = "https://github.com/infinity-swap/canister-sdk", package = "ic-stable-structures", tag = "v0.3.54" }
+serde = "1"

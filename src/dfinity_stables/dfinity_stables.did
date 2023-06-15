@@ -1,0 +1,7 @@
+type Transaction = record { to : nat8; value : nat8; from : nat8 };
+service : {
+  add_tx : (nat8, nat8, nat8) -> (nat64);
+  get_genesis_tx : () -> (Transaction) query;
+  get_tx : (nat64) -> (opt Transaction) query;
+  get_latest_key : () -> (nat64) query;
+};
